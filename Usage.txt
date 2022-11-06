@@ -1,0 +1,59 @@
+Usage of flask library
+
+Command to run flask server:
+> py -m flask run
+
+Script "app.py" is opened as default.
+
+Place to make a "get" or "post" request:
+- Chrome addon: Boomerang
+- Software: Postman
+
+
+Available flask commands:
+
+- Table names in database
+http://127.0.0.1:5000/tables_name
+
+- Create new table in database
+http://127.0.0.1:5000/create_table
+
+Write parameters like described below:
+"table_name" : "<table_name>",
+"columns" : "<col_name col_type>,<col_name col_type>,..."
+
+- Add new record to table in database
+http://127.0.0.1:5000/add_record
+
+Write parameters like described below:
+"table_name" : "<table_name>",
+"data_in_columns" : "<data>,<data>,..."
+
+- Fetch all columns in table
+http://127.0.0.1:5000/fetch_columns_in_table
+
+Write parameters like described below:
+"table_name" : "<table_name>"
+
+- Fetch all record in table
+http://127.0.0.1:5000/fetch_records_in_table
+
+Write parameters like described below:
+"table_name" : "<table_name>"
+
+- Delete record in table by index
+http://127.0.0.1:5000/delete_record_by_index
+
+Write parameters like described below:
+"table_name" : "<table_name>",
+"index" : "<index>'
+
+- Delete all record in table
+http://127.0.0.1:5000/delete_all_records_in_table
+
+Write parameters like described below:
+"table_name" : "<table_name>"
+
+
+
+
